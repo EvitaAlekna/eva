@@ -1,2 +1,12 @@
-package com.app.controllers;public class MainController {
+package com.app.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class MainController {
+    @GetMapping("/")
+    public String getHomePage() {
+        return "homePage";
+    }
 }

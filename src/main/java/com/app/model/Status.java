@@ -1,8 +1,8 @@
 package com.app.model;
 
-public class Statuses {
-    long id;
-    String name;
+public class Status {
+    private long id;
+    private String name;
 
     public long getId() {
         return id;

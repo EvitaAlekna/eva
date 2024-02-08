@@ -1,7 +1,7 @@
 package com.app.model;
 
-public class Accesses {
-    long id;
+public class Access {
+    private long id;
 
     public long getId() {
         return id;
