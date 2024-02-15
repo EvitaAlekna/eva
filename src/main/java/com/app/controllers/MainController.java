@@ -9,4 +9,9 @@ public class MainController {
     public String getHomePage() {
         return "homePage";
     }
+
+    @GetMapping("/error")
+    public String getErrorPage() {
+        return "pizdec";
+    }
 }

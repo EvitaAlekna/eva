@@ -17,7 +17,7 @@ public class UserDAO {
 
     public void storeNewUser(User user) {
         jdbcTemplate.update("INSERT INTO users (first_name, last_name, email, password) " +
-                        "VALUES (?, ?, ?, ?,)", user.getFirstName(), user.getLastName(),
+                        "VALUES (?, ?, ?, ?)", user.getFirstName(), user.getLastName(),
                             user.getEmail(), user.getPassword());
     }
 
